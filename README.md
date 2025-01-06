@@ -1,59 +1,61 @@
-# NxtUp
+## Overview 
 
-NxtUp is a React-based application designed to provide a seamless user experience. This project serves as a template for creating modern web applications using React.
+This repository contanis the code of NXTUP website. 
 
-## Features
+- It's powered by [Next.js](https://nextjs.org/)
+- It uses [SASS](https://sass-lang.com/) framework.
+- It's built use CRA and deployed with [Vercel](https://vercel.com/)
+- It's code primarily written using the [React.js](https://react.dev/) library.
 
-- User-friendly interface
-- Responsive design
-- Easy to customize and extend
+## Requirements 
 
-## Getting Started
+Use the following tools to set up this project: 
 
-### Prerequisites
+- [Node.js](https://nodejs.org/) v20.12.0+
+- [npm](https://www.npmjs.com/) v10.5.0+
 
-Make sure you have the following installed on your machine:
+## Run Locally 
 
-- Node.js (v14 or higher)
-- npm (comes with Node.js)
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/nxtup.git
-   cd nxtup
-   ```
-
-2. Install the dependencies:
-   ```bash
-   npm install
-   ```
-
-### Running the Application
-
-To start the development server, run the following command:
-
+1. Fork the repository by clicking on `Fork` option on the top right of the main repository.
+  
+2. Open Command Prompt or Terminal on you Windows or MacOS.
+  
+3. Clone the forked repository by adding you own GitHub username in place of `<username>`. For multiple contribution it is recomment to have [proper configuration of the forked repo](https://github.com/nxtuporg/community/blob/main/git-workflow.md).
 ```bash
-npm start
+git clone https://github.com/<username>/frontend/
 ```
 
-This will open the application in your default web browser at `http://localhost:3000`.
+4. Navigate to the frontend directory.
+```bash
+    cd website
+```
 
-### Building for Production
+5. Install all website dependencies
+```bash
+    npm install
+```
 
-To create an optimized build for production, use:
+6. Run the website locally.
+
+```bash
+    npm run dev
+```
+
+7. Access the live development server at [localhost:3000](http://localhost:3000).
+
+### Build
+
+1. To build a production-ready website, run the following command:
 
 ```bash
 npm run build
 ```
 
-This will generate a `build` folder containing the production-ready files.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project's source code is licensed under the Apache License, Version 2.0. A copy of the
+license is available in LICENSE file.
+
+This project's documentation is licensed under the Creative Commons Attribution
+4.0 International License (CC-BY-4.0). A copy of the license is available in
+LICENSE-docs.
