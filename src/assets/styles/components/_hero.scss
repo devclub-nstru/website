@@ -1,0 +1,71 @@
+.hero {
+    .main-event-details {
+      text-align: center;
+      min-height: 580px;
+      background-size: cover; 
+      background-position: center;
+      background-image: url('../../images/hero-banner.jpg');
+      background-blend-mode: multiply;
+  
+      @include respond-to("md") {
+        min-height: 400px;
+        background-size: cover;
+      }
+
+      @include respond-to("xs") {
+        min-height: 400px;
+        background-size: contain; 
+        background-repeat: no-repeat;
+      }
+
+      @include respond-to("sm") {
+        min-height: 400px; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+      }
+  
+      .event-name {
+        font-size: 4.2rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(to bottom, #ffffff, $secondary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+  
+        @include respond-to("md") {
+          font-size: 3rem;
+        }
+      }
+  
+      .event-date {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+  
+        @include respond-to("md") {
+          font-size: 0.75rem;
+          margin-bottom: 1.25rem;
+        }
+      }
+  
+      .know-more-link {
+        font-size: 0.9rem;
+        border: 1px solid $primary-color;
+        padding: 0.65rem 1.5rem;
+        border-radius: 1rem;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: $primary-color;
+          color: $background-color;
+        }
+  
+        @include respond-to("md") {
+          font-size: 0.75rem;
+          padding: 0.5rem 1.25rem;
+        }
+      }
+    }
+  }
+  

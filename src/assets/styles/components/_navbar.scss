@@ -1,0 +1,43 @@
+// components/_navbar.scss
+.navbar {
+  @include flex-space-between;
+
+  .logo-container {
+    .logo-text {
+      font-size: 1.75rem;
+      font-weight: 700;
+      font-family: $font-secondary;
+      transition: all 0.7s;
+
+      @include respond-to("md") {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .links-container {
+    .links {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      gap: 0.8rem;
+      .link {
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        @include respond-to("md") {
+          font-size: 0.75rem;
+        }
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

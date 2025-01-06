@@ -1,0 +1,173 @@
+.event-details-container {
+  .event-details-banner {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .sub-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @include respond-to("lg") {
+      flex-direction: column;
+    }
+
+    .event-info {
+      flex: 3;
+      .event-details-info {
+        background-color: $tertiary-color;
+        padding: 0.75rem 1.5rem;
+        border-radius: 1.25rem;
+        margin-bottom: 1rem;
+
+        .event-details__title {
+          font-size: 3.5rem;
+          background: linear-gradient(to bottom, #ffffff, $secondary-color);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          @include respond-to("md") {
+            font-size: 2.5rem;
+          }
+        }
+
+        .location-container,
+        .date-container {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          margin-bottom: 0.25rem;
+          font-size: 0.9rem;
+
+          @include respond-to("md") {
+            font-size: 0.75rem;
+          }
+        }
+
+        .event-tag {
+          padding: 0.5rem 0.75rem;
+          border: 1px solid rgba(255, 255, 255);
+          width: fit-content;
+          margin-top: 0.75rem;
+          border-radius: 1.25em;
+          font-size: 0.95rem;
+
+          @include respond-to("md") {
+            font-size: 0.75rem;
+          }
+        }
+      }
+
+      .event-details-description {
+        .tabs {
+          background-color: $tertiary-color;
+          padding: 0.75rem 1.5rem;
+          border-radius: 0.75rem;
+          margin-bottom: 1rem;
+
+          .tab-button {
+            border: none;
+            background: none;
+            color: $text-color;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-right: 2.5rem;
+            padding-bottom: 0.5rem;
+
+            @include respond-to("md") {
+              font-size: 0.75rem;
+              padding-bottom: 0.25rem;
+            }
+          }
+          .active {
+            border-bottom: 2px solid $primary-color;
+          }
+        }
+
+        .tabs-content {
+          background-color: $tertiary-color;
+          padding: 0.75rem 1.5rem;
+          border-radius: 0.75rem;
+
+          p {
+            @include respond-to("md") {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+
+    .register-container {
+      flex: 1;
+      position: sticky;
+      background-color: $tertiary-color;
+      padding: 0.75rem 1.5rem;
+      border-radius: 1.25rem;
+
+      .top {
+        .register-type {
+          font-size: 1.5rem;
+          @include respond-to("md") {
+            font-size: 1rem;
+          }
+        }
+
+        .register-button {
+          width: 100%;
+          padding: 0.5rem 1rem;
+          border-radius: 0.25rem;
+          border: none;
+          background-color: $primary-color;
+          color: $text-color;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          margin-top: 0.5rem;
+        }
+      }
+
+      .bottom {
+        margin-top: 1rem;
+        .info-container {
+          display: flex;
+          margin-bottom: 1rem;
+
+          .icon {
+            background-color: $quaternary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3rem;
+            height: 3rem;
+            margin-right: 0.5rem;
+            font-size: 1.25rem;
+            border-radius: 0.25rem;
+          }
+
+          .info-text {
+            display: flex;
+            flex-direction: column;
+
+            .top {
+              font-size: 0.75rem;
+              margin: 0;
+              color: $secondary-color;
+            }
+
+            .bottom {
+              font-size: 1.25rem;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

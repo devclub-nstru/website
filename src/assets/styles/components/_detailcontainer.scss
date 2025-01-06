@@ -1,0 +1,109 @@
+.detail-container {
+  color: $text-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 2rem;
+  font-size: 0.75rem;
+
+  @include respond-to("md") {
+    gap: 1rem;
+  }
+
+  @include respond-to("sm") {
+    flex-direction: column;
+  }
+
+  .event-date {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .date-number {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1;
+
+      @include respond-to("md") {
+        font-size: 3rem;
+      }
+    }
+
+    .date-month {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.25rem;
+
+      @include respond-to("md") {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .event-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.75rem;
+
+    @include respond-to("sm") {
+      align-items: center;
+    }
+    .time-container,
+    .location-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      @include respond-to("md") {
+        margin-bottom: 0.5rem;
+      }
+      svg {
+        font-size: 1.5rem;
+        @include respond-to("md") {
+          font-size: 1rem;
+        }
+      }
+      gap: 0.25rem;
+    }
+  }
+
+  .event-description {
+    width: 62.5%;
+
+    @include respond-to("md") {
+      width: 60%;
+    }
+
+    @include respond-to("sm") {
+      width: 100%;
+      text-align: center;
+    }
+
+    .event-heading {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.75rem;
+      @include respond-to("md") {
+        font-size: 1.25rem;
+      }
+    }
+
+    .event-details {
+      text-align: left;
+      font-size: 0.75rem;
+      color: $secondary-color;
+
+      @include respond-to("md") {
+        font-size: 0.65rem;
+      }
+
+      @include respond-to("sm") {
+        text-align: center;
+      }
+    }
+  }
+}

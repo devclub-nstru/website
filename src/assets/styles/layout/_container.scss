@@ -1,0 +1,31 @@
+.container {
+  @include respond-to(xxl) {
+    max-width: 1280px;
+  }
+
+  @include respond-to(xl) {
+    max-width: 1024px;
+  }
+
+  @include respond-to(lg) {
+    max-width: 768px;
+  }
+
+  @include respond-to(md) {
+    max-width: 640px;
+  }
+
+  @include respond-to(sm) {
+    max-width: 475px;
+  }
+
+  @include respond-to(xs) {
+    max-width: 100%;
+  }
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  margin-top: $container-margin;
+}

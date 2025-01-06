@@ -1,0 +1,54 @@
+.footer {
+  color: $text-color; // White text
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 90%; // Ensure it spans the full width
+  margin: 4rem auto 0; // Adds spacing from the previous section
+
+  .footer-container {
+    @extend .container; // Using your responsive container
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include respond-to(md) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  // Copyright text styles
+  .footer-copyright {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  // Social Icons container
+  .footer-social {
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .icon {
+        font-size: 1.2rem;
+        transition: all 0.3s ease-in-out;
+
+        a {
+          color: rgba(255, 255, 255, 0.7);
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+            color: $primary-color; // Add hover effect with primary color
+          }
+        }
+      }
+    }
+  }
+}
