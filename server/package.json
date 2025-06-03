@@ -1,18 +1,21 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "description": "This is a project that contains all the files related to server side of the DevClub website",
+  "main": "server.js",
+  "license": "Apache-2.0",
+  "author": "DevClub",
+  "type": "module",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "express": "^5.1.0"
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "node -r dotenv/config --experimental-json-modules --watch src/server.js"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "dotenv": "^16.5.0",
+    "prettier": "^3.5.3"
   }
 }
