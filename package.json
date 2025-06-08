@@ -8,12 +8,13 @@
   "type": "module",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
   },
   "scripts": {
-    "start": "node index.js",
-    "dev": "node -r dotenv/config --experimental-json-modules --watch src/server.js",
-    "build": "yarn install && yarn install --prefix client && yarn run build --prefix client",
+    "start": "node server/src/server.js",
+    "dev": "nodemon -r dotenv/config --experimental-json-modules server/src/server.js",
+    "build": "yarn install && yarn install --prefix client && yarn build --prefix client",
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . --ext .js --fix"
   },
