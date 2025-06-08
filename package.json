@@ -13,6 +13,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node -r dotenv/config --experimental-json-modules --watch src/server.js",
+    "build": "yarn install && yarn install --prefix client && yarn run build --prefix client",
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . --ext .js --fix"
   },
