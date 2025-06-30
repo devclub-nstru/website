@@ -14,7 +14,7 @@ const TeamPage = () => {
       bio: "Leading DevClub with passion for innovation and community building. Full-stack developer with 5+ years experience.",
       skills: ["React", "NextJS", "MongoDB", "HTML", "CSS", "EXPRESS", "TAILWIND CSS", "MONGO DATABASE", "DOM", "UNIT TEST", "PERFORMANCE OPTIMIZE", "SSR", "TYPESCRIPT", "PYTHON", "REACT NATIVE", "SOLIDITY", "DOCKER", "NODE", "GIT", "GITHUB", "LINUX", "WORDPRESS", "VPS", "VERCEL", "UX/UI DESIGN", "PRODUCT DESIGN", "FIGMA", "ADOBE XD", "WIREFRAME", "WEB3", "AI/ML", "NLP METHODS", "LLM MODELS", "SMART CONTRACTS", "CI & CD", "BLOCKCHAIN", "JENKINS", "AWS SERVICES", "VECTORS EMBEDDINGS"],
       social: {
-        github: "https://github.com/",
+        github: "https://github.com/AdityaInnovates",
         linkedin: "https://www.linkedin.com/in/adityainnovates/",
       },
       graduationYear: "2028",
